@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace calculator
 {
@@ -49,12 +49,36 @@ namespace calculator
     // Calculator class to perform operations
     public class Calculator
     {
-        // ---------- TODO ----------
-        
-        // --------------------
+        public double Calculate(double num1, string op, double num2)
+        {
+            if (op == "+")
+            {
+                return num1 + num2;
+            }
+            else if (op == "-")
+            {
+                return num1 - num2;
+            }
+            else if (op == "/")
+            {
+                return num1 / num2;
+            }
+            else if (op == "*")
+            {
+                return num1 * num2;
+            }
+            else if (op == "%")
+            {
+                return num1 % num2;
+
+            }
+            else
+            {
+                return 0;
+            }
+        }
     }
 }
-
 /* example output
 
 Enter an expression (ex. 2 + 3):
